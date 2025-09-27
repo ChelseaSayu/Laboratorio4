@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f1ea; /* Beige/marfil */
+  min-height: 100vh;
+  color: #2c2c2c; /* Gris piedra */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #0a1f1a; /* Verde bosque oscuro */
+}
+
+.input-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0a1f1a; /* Verde oscuro */
+}
+
+select,
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d6d3c9; /* Beige grisáceo */
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #faf9f6; /* Marfil claro */
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #013220; /* Verde clásico */
+}
+
+.botones-principales {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #013220; /* Verde clásico */
+  color: #fdfdfc; /* Blanco cálido */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  flex: 1;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0a3d2d; /* Verde más profundo */
+}
+
+.btn-eliminar {
+  background-color: #7c0a02; /* Rojo vino elegante */
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+/* Mensaje simple */
+.mensaje-simple {
+  background-color: #2f5233; /* Verde oliva profundo */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Estilos para los recordatorios */
+.resultado {
+  display: block;
+}
+
+.semana-header {
+  background-color: #013220; /* Verde clásico */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.semana-header h2 {
+  margin-bottom: 10px;
+}
+
+.contador {
+  opacity: 0.9;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.actividades-base {
+  display: grid;
+  gap: 15px;
+}
+
+.dia-actividad-base {
+  background-color: #faf9f6; /* Marfil */
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #013220; /* Verde clásico */
+}
+
+.dia-actividad-base h3 {
+  color: #1a2e28; /* Verde grisáceo oscuro */
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.dia-actividad-base p {
+  color: #555; /* Gris elegante */
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.recordatorios-agregados {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #b8b5aa;
+}
+
+.recordatorio-item {
+  background-color: white;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border-left: 3px solid #013220; /* Verde clásico */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.recordatorio-mensaje {
+  font-weight: 500;
+  flex: 1;
+  color: #2c2c2c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .input-section {
+    padding: 20px;
+  }
+
+  .botones-principales {
+    flex-direction: column;
+  }
+
+  .recordatorio-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-eliminar {
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Final - Guia 4</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Sistema de recordatorios semanales</h1>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <div class="input-group">
+            <label for="diaSemana">Seleccione el día de la semana:</label>
+            <select id="diaSemana">
+              <option value="">-- Selecciona un día --</option>
+              <option value="lunes">Lunes</option>
+              <option value="martes">Martes</option>
+              <option value="miercoles">Miércoles</option>
+              <option value="jueves">Jueves</option>
+              <option value="viernes">Viernes</option>
+              <option value="sabado">Sábado</option>
+              <option value="domingo">Domingo</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="mensajePersonal">Recordatorio personalizado:</label>
+            <input type="text" id="mensajePersonal" placeholder="Ej: Llamar al cliente a las 10am...">
+          </div>
+
+          <div class="botones-principales">
+            <button onclick="guardarRecordatorio()" class="btn-guardar">
+              Guardar recordatorio
+            </button>
+            <button onclick="mostrarRecordatoriosSemana()">
+              Mostrar recordatorios
+            </button>
+            <button onclick="limpiarResultado()">
+              Limpiar
+            </button>
+          </div>
+
+        </div>
+
+        <div id="recordatorio" class="resultado"></div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
